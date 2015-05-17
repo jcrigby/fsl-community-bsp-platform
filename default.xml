@@ -6,13 +6,14 @@
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
   <remote fetch="https://github.com/Freescale" name="freescale"/>
   <remote fetch="https://github.com/openembedded" name="oe"/>
+  <remote fetch="https://github.com/jcrigby" name="jcrigby"/>
 
   <project remote="yocto" revision="fido" name="poky" path="sources/poky"/>
   <project remote="yocto" revision="fido" name="meta-fsl-arm" path="sources/meta-fsl-arm"/>
 
   <project remote="oe" revision="fido" name="meta-openembedded" path="sources/meta-openembedded"/>
 
-  <project remote="freescale" revision="fido" name="fsl-community-bsp-base" path="sources/base">
+  <project remote="jcrigby" revision="fido" name="fsl-community-bsp-base" path="sources/base">
 	<copyfile dest="README" src="README"/>
 	<copyfile dest="setup-environment" src="setup-environment"/>
   </project>
@@ -20,5 +21,6 @@
   <project remote="freescale" revision="fido" name="meta-fsl-arm-extra" path="sources/meta-fsl-arm-extra"/>
   <project remote="freescale" revision="fido" name="meta-fsl-demos" path="sources/meta-fsl-demos"/>
   <project remote="freescale" revision="fido" name="Documentation" path="sources/Documentation"/>
+  <project remote="jcrigby" revision="fido" name="meta-axsense" path="sources/meta-axsense"/>
 
 </manifest>
